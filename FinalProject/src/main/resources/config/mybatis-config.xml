@@ -14,7 +14,7 @@
   		<mapper resource="mapper/login_query.xml" />
         <mapper resource="mapper/user_query.xml" />
         <mapper resource="mapper/attraction_query.xml" />
-        <mapper resource="mapper/friend_query.xml" />
+        <mapper resource="mapper/follow_query.xml" />
         <mapper resource="mapper/plan_query.xml" />
     </mappers>     
 </configuration>

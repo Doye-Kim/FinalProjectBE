@@ -41,4 +41,9 @@ public class UserServiceImpl implements UserService{
 		return userDao.userFindPassword(userSeq);
 	}
 
+	@Override
+	public UserDto getUserByPhone(String userPhone) {
+		return userDao.getUserByPhone(userPhone);
+	}
+
 }

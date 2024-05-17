@@ -36,5 +36,10 @@
 		select * from user
 			where user_seq = #{userSeq} and is_quit = 0
 	</select>
+	
+	<select id="getUserByPhone" parameterType="int" resultType="com.ssafy.finalpjt.user.dto.UserDto">
+		select * from user
+			where user_phone = #{userPhone} and is_quit = 0
+	</select>
 
 </mapper>
