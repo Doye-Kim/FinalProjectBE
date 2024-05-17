@@ -26,7 +26,12 @@ public class WebMvcConfig implements WebMvcConfigurer{
             "/login/**",
             "/users/**",
             "/codes/**",
-            "/logout"
+            "/logout",
+            "/swagger-ui/**",
+            "/swagger-resources/**",
+            "/v2/api-docs",
+            "/webjars/**",
+            "/swagger*/**"
         );
     }
     

@@ -12,5 +12,29 @@
 		 	#{userId}, #{userNickname}, #{password}, #{userPhone}, #{allowSearchByPhone}
 		 )
 	</insert>
+	<update id="userUpdate" parameterType="com.ssafy.finalpjt.user.dto.UserDto">
+		update user set user_nickname = #{userNickname}, user_phone = #{userPhone}, allow_search_by_phone = #{allowSearchByPhone} 
+			where user_seq = #{userSeq}
+	</update>
+	
+	<update id="userUpdatePW" parameterType="com.ssafy.finalpjt.user.dto.UserDto">
+		update user set password = #{password}
+			where user_seq = #{userSeq}
+	</update>
+
+	<delete id="userDelete" parameterType="int">
+		update user set is_quit = 1, password='', user_nickname='', role = ''
+			where user_seq = #{userSeq}
+	</delete>
+	
+	<select id="userFindPassword" parameterType="int">
+		select password from user 
+			where user_seq = #{userSeq}
+	</select>
+	
+	<select id="getUser" parameterType="int" resultType="com.ssafy.finalpjt.user.dto.UserDto">
+		select * from user
+			where user_seq = #{userSeq} and is_quit = 0
+	</select>
 
 </mapper>
