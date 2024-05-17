@@ -25,7 +25,8 @@ public class WebMvcConfig implements WebMvcConfigurer{
             "/userProfileImage/**",                
             "/login/**",
             "/users/**",
-            "/codes/**"
+            "/codes/**",
+            "/logout"
         );
     }
     

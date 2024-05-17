@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- sql 작성 -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
-<mapper namespace="com.mycom.pjt.auth.dao.LoginDao">
-
+<mapper namespace="com.ssafy.finalpjt.auth.dao.LoginDao">
+<select id="login" parameterType="string" resultType="com.ssafy.finalpjt.user.dto.UserDto">
+		select *
+			from user
+			where user_id = #{userId}
+	</select>
 </mapper>

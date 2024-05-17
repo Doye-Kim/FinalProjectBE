@@ -20,6 +20,7 @@ public class LoginInterceptor implements HandlerInterceptor{
         // exclude 요청에는 아래 출력 X
         System.out.println("LoginInterceptor >>>> " + request.getRequestURI());
         System.out.println(handler);
+        System.out.println(request.getMethod());
         
         // CORS 에서  put, delete 등 오류 해결 코드
         if (request.getMethod().equals("OPTIONS")) {
@@ -27,6 +28,8 @@ public class LoginInterceptor implements HandlerInterceptor{
         }
         
         HttpSession session = request.getSession();
+        
+        System.out.println((UserDto) session.getAttribute("userDto"));
         UserDto userDto = (UserDto) session.getAttribute("userDto");
 
         if( userDto == null ) {
