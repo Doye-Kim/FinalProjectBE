@@ -41,7 +41,7 @@ public class LoginController {
         return new ResponseEntity<Map<String, String>>(map, HttpStatus.NOT_FOUND);
     }
     @GetMapping(value="/logout")
-    public ResponseEntity<Map<String, String>> logout(HttpSession session){
+    public ResponseEntity<Map<String, String>> login(HttpSession session){
         session.invalidate();
         Map<String, String> map = new HashMap<>();
         map.put("result", "success");
