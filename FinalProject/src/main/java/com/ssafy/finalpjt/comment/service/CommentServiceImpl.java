@@ -15,8 +15,8 @@ public class CommentServiceImpl implements CommentService{
 	private final CommentDao commentDao;
 
     @Override
-    public List<CommentDto> getCommentsByPostSeq(int postSeq) {
-        return commentDao.getCommentsByPostSeq(postSeq);
+    public List<CommentDto> listComment(int postSeq) {
+        return commentDao.listComment(postSeq);
     }
 
     @Override
