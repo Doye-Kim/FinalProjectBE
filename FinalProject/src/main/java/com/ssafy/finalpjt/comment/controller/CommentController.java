@@ -22,8 +22,8 @@ public class CommentController {
 	private final CommentService commentService;
 
     @GetMapping("/posts/{postSeq}/comments")
-    public List<CommentDto> getCommentsByPostSeq(@PathVariable int postSeq) {
-        return commentService.getCommentsByPostSeq(postSeq);
+    public List<CommentDto> listComment(@PathVariable int postSeq) {
+        return commentService.listComment(postSeq);
     }
 
     @PostMapping("/posts/{postSeq}/comments")
@@ -38,7 +38,7 @@ public class CommentController {
 //        return commentService.updateComment(commentDto);
 //    }
 
-    @DeleteMapping("/comments/{commentSeq}")
+    @DeleteMapping("posts/comments/{commentSeq}")
     public int deleteComment(@PathVariable int commentSeq) {
         return commentService.deleteComment(commentSeq);
     }
