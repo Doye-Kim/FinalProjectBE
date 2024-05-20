@@ -9,7 +9,8 @@
     </settings>
 
     <mappers>
-        <mapper resource="mapper/board_query.xml" />
+        <mapper resource="mapper/post_query.xml" />
+        <mapper resource="mapper/comment_query.xml" />
         <mapper resource="mapper/bookmark_query.xml" />
   		<mapper resource="mapper/login_query.xml" />
         <mapper resource="mapper/user_query.xml" />
