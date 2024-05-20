@@ -11,25 +11,26 @@ public class PostDto {
 	private String postTitle;
 	private String postContent;
 	private LocalDate postTime;
-	private LocalDate updateDate;
+	private LocalDate updateTime;
 	private int likeCount;
 	private int viewCount;
+	
+	//외래키
+	private int userSeq;
 
-	private List<CommentDto> comment;
 
-	public PostDto() {
-	}
 
-	public PostDto(String postTitle, String postContent, LocalDate postTime, LocalDate updateDate, int likeCount,
-			int viewCount, List<CommentDto> comment) {
+	public PostDto(String postTitle, String postContent, LocalDate postTime, LocalDate updateTime, int likeCount,
+			int viewCount, int userSeq, List<CommentDto> comment) {
 		super();
 		this.postTitle = postTitle;
 		this.postContent = postContent;
 		this.postTime = postTime;
-		this.updateDate = updateDate;
+		this.updateTime = updateTime;
 		this.likeCount = likeCount;
 		this.viewCount = viewCount;
-		this.comment = comment;
+		this.userSeq = userSeq;
+
 	}
 
 	public int getPostSeq() {
@@ -64,12 +65,12 @@ public class PostDto {
 		this.postTime = postTime;
 	}
 
-	public LocalDate getUpdateDate() {
-		return updateDate;
+	public LocalDate getUpdateTime() {
+		return updateTime;
 	}
 
-	public void setUpdateDate(LocalDate updateDate) {
-		this.updateDate = updateDate;
+	public void setUpdateTime(LocalDate updateTime) {
+		this.updateTime = updateTime;
 	}
 
 	public int getLikeCount() {
@@ -88,19 +89,22 @@ public class PostDto {
 		this.viewCount = viewCount;
 	}
 
-	public List<CommentDto> getComment() {
-		return comment;
+	public int getUserSeq() {
+		return userSeq;
 	}
 
-	public void setComment(List<CommentDto> comment) {
-		this.comment = comment;
+	public void setUserSeq(int userSeq) {
+		this.userSeq = userSeq;
 	}
+
+
 
 	@Override
 	public String toString() {
 		return "PostDto [postSeq=" + postSeq + ", postTitle=" + postTitle + ", postContent=" + postContent
-				+ ", postTime=" + postTime + ", updateDate=" + updateDate + ", likeCount=" + likeCount + ", viewCount="
-				+ viewCount + ", comment=" + comment + "]";
+				+ ", postTime=" + postTime + ", updateTime=" + updateTime + ", likeCount=" + likeCount + ", viewCount="
+				+ viewCount + ", userSeq=" + userSeq + "]";
 	}
 
+	
 }
