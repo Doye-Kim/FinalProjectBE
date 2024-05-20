@@ -13,7 +13,7 @@ public interface CommentDao {
 	int insertComment(CommentDto commentDto);
 	
 	// 게시글의 댓글 목록 조회
-    List<CommentDto> getCommentsByPostSeq(int postSeq);
+    List<CommentDto> listComment(int postSeq);
     
     // 댓글 수정
 //    void updateComment(CommentDto commentDto);
