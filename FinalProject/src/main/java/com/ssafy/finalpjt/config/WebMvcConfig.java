@@ -18,12 +18,13 @@ public class WebMvcConfig implements WebMvcConfigurer{
         registry.addInterceptor(loginInterceptor)
         .addPathPatterns("/**")
         .excludePathPatterns(
-            "/",
+            "/**",
             "/index.html",
             "/favicon.ico",
             "/assets/**",    
             "/userProfileImage/**",                
             "/login/**",
+            "/attraction/**",
             "/users/**",
             "/codes/**",
             "/logout",

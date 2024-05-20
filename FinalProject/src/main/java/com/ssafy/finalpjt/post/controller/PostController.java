@@ -1,6 +1,8 @@
 package com.ssafy.finalpjt.post.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.finalpjt.post.dto.PostDto;
@@ -41,17 +43,21 @@ public class PostController {
 
 	// 등록
 	@PostMapping("/posts")
-	public int postInsert(@RequestBody PostDto dto) {
-		System.out.println(dto);
-		System.out.println("왜안됨");
-		return postService.postInsert(dto);
+	public int postInsert(@RequestParam("userSeq") String userSeq, @RequestParam("title") String title, @RequestParam("content") String content ) {
+		Map<String, String> map = new HashMap<>();
+		map.put("userSeq", userSeq);
+		map.put("title", title);
+		map.put("content", content);
+		return postService.postInsert(map);
 	}
 
 	// 수정
 	@PutMapping("/posts/{postSeq}")
-	public int postUpdate(@PathVariable("postSeq") int postSeq, @RequestBody PostDto dto) {
-		System.out.println(dto);
-		return postService.postUpdate(dto);
+	public int postUpdate(@PathVariable("postSeq") int postSeq,  @RequestParam("title") String title, @RequestParam("content") String content) {
+		PostDto postDto = postService.postDetail(postSeq);
+		postDto.setPostTitle(title);
+		postDto.setPostContent(content);
+		return postService.postUpdate(postDto);
 	}
 
 	// 삭제

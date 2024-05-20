@@ -12,15 +12,14 @@
 
 	<select id="listComment" parameterType="int"
 		resultType="com.ssafy.finalpjt.comment.dto.CommentDto">
-		SELECT comment_content, comment_time, post_seq, user_seq
-		FROM comment
-		WHERE post_seq = #{postSeq}
+		SELECT * FROM comment
+			WHERE post_seq = #{postSeq}
 	</select>
 
 	<!-- <update id="updateComment"> UPDATE comments SET commentContent = #{commentContent}, 
 		commentTime = #{commentTime} WHERE commentSeq = #{commentSeq} </update> -->
 
 	<delete id="deleteComment" parameterType="int">
-		DELETE FROM comments WHERE commentSeq = #{commentSeq}
+		DELETE FROM comment WHERE comment_seq = #{commentSeq}
 	</delete>
 </mapper>

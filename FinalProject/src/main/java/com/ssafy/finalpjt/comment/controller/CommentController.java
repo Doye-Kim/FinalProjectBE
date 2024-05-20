@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.finalpjt.comment.dto.CommentDto;
@@ -22,13 +21,18 @@ public class CommentController {
 	private final CommentService commentService;
 
     @GetMapping("/posts/{postSeq}/comments")
-    public List<CommentDto> listComment(@PathVariable int postSeq) {
+    public List<CommentDto> listComment(@PathVariable("postSeq") int postSeq) {
         return commentService.listComment(postSeq);
     }
 
     @PostMapping("/posts/{postSeq}/comments")
-    public int insertComment(@PathVariable int postSeq, @RequestBody CommentDto commentDto) {
+    public int insertComment(@PathVariable("postSeq") int postSeq, @RequestParam("userSeq") int userSeq,  @RequestParam("commentContent") String commentContent) {
+        System.out.println(postSeq);
+        System.out.println(commentContent);
+    	CommentDto commentDto = new CommentDto();
         commentDto.setPostSeq(postSeq);
+        commentDto.setUserSeq(userSeq);
+        commentDto.setCommentContent(commentContent);
         return commentService.insertComment(commentDto);
     }
 
@@ -39,7 +43,7 @@ public class CommentController {
 //    }
 
     @DeleteMapping("posts/comments/{commentSeq}")
-    public int deleteComment(@PathVariable int commentSeq) {
+    public int deleteComment(@PathVariable("commentSeq") int commentSeq) {
         return commentService.deleteComment(commentSeq);
     }
 }

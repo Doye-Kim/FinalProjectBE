@@ -7,23 +7,25 @@
 	
 	<!-- 게시글 목록 조회 -->
 	<select id="postList" resultType="com.ssafy.finalpjt.post.dto.PostDto">
-		SELECT post_seq, post_title, post_content, post_time, update_date,
-		like_count, view_count, user_seq
-		FROM post
-		ORDER BY post_seq DESC
+		SELECT * FROM post
 	</select>
 
 	<!-- 게시글 상세 조회 -->
     <select id="postDetail" parameterType="int" resultType="com.ssafy.finalpjt.post.dto.PostDto">
-    SELECT post_seq, post_title, post_content, post_time, update_time, like_count, view_count, user_seq
-    FROM post
+    SELECT * FROM post
     WHERE post_seq = #{postSeq}
 </select>
     
     <!-- 게시글 등록 -->
-    <insert id="postInsert" parameterType="com.ssafy.finalpjt.post.dto.PostDto" useGeneratedKeys="true" keyProperty="postSeq">
-    INSERT INTO post (post_title, post_content, post_time, update_time, like_count, view_count, user_seq)
-    VALUES (#{postTitle}, #{postContent}, NOW(), NOW(), #{likeCount}, #{viewCount}, #{userSeq})
+    <insert id="postInsert" parameterType="map" useGeneratedKeys="true" keyProperty="postSeq">
+    INSERT INTO post 
+    (
+    	post_title, post_content, post_time, update_time, like_count, view_count, user_seq
+    )
+    VALUES 
+    (
+    	#{title}, #{content}, NOW(), NOW(), 0, 0, #{userSeq}
+    )
 	</insert>
     
     <!-- 게시글 수정 -->
@@ -31,7 +33,7 @@
         UPDATE post
         SET post_title = #{postTitle},
             post_content = #{postContent},
-            update_date = NOW()
+            update_time = NOW()
         WHERE post_seq = #{postSeq}
     </update>
     

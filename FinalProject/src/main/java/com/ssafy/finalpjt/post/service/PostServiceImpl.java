@@ -1,6 +1,7 @@
 package com.ssafy.finalpjt.post.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
@@ -26,8 +27,8 @@ public class PostServiceImpl implements PostService{
 	}
 
 	@Override
-	public int postInsert(PostDto dto) {
-		return postDao.postInsert(dto);
+	public int postInsert(Map<String, String> map) {
+		return postDao.postInsert(map);
 	}
 
 	@Override
