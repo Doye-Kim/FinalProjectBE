@@ -5859,3 +5859,61 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '49' for key 
 2024-05-20T17:22:17.292+09:00  INFO 10044 --- [FinalProject] [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2024-05-20T17:22:17.306+09:00  INFO 10044 --- [FinalProject] [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-20T17:22:17.310+09:00  INFO 10044 --- [FinalProject] [RMI TCP Connection(37)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-20T17:25:02.417+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 9144 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
+2024-05-20T17:25:02.418+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T17:25:02.450+09:00  INFO 9144 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-20T17:25:02.450+09:00  INFO 9144 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-20T17:25:03.202+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-20T17:25:03.209+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T17:25:03.209+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-20T17:25:03.244+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T17:25:03.245+09:00  INFO 9144 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2024-05-20T17:25:04.007+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-20T17:25:04.033+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-20T17:25:04.039+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 1.878 seconds (process running for 2.274)
+2024-05-20T17:25:33.750+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-20T17:25:33.750+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-20T17:25:33.751+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-20T17:25:33.790+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-20T17:25:33.978+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11b0a306
+2024-05-20T17:25:33.980+09:00  INFO 9144 --- [FinalProject] [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-20T17:41:50.771+09:00  INFO 9144 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-05-20T17:41:50.786+09:00  INFO 9144 --- [FinalProject] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-20T17:41:50.791+09:00  INFO 9144 --- [FinalProject] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-20T17:41:50.837+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 9144 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
+2024-05-20T17:41:50.838+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T17:41:51.044+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-20T17:41:51.044+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T17:41:51.044+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-20T17:41:51.055+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T17:41:51.055+09:00  INFO 9144 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2024-05-20T17:41:51.355+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-20T17:41:51.362+09:00  INFO 9144 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-20T17:41:51.366+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.547 seconds (process running for 1009.6)
+2024-05-20T17:41:51.367+09:00  INFO 9144 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-20T17:41:53.262+09:00  INFO 9144 --- [FinalProject] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-20T17:56:56.592+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 2284 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
+2024-05-20T17:56:56.593+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T17:56:56.627+09:00  INFO 2284 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-20T17:56:56.627+09:00  INFO 2284 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-20T17:56:57.430+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-20T17:56:57.437+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T17:56:57.438+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-20T17:56:57.472+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T17:56:57.472+09:00  INFO 2284 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 845 ms
+2024-05-20T17:56:58.264+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-20T17:56:58.289+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-20T17:56:58.297+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 1.959 seconds (process running for 2.363)
+2024-05-20T18:00:32.899+09:00  INFO 2284 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-20T18:00:32.954+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 2284 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
+2024-05-20T18:00:32.955+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T18:00:33.149+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-20T18:00:33.149+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T18:00:33.149+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-20T18:00:33.158+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T18:00:33.159+09:00  INFO 2284 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 203 ms
+2024-05-20T18:00:33.453+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-20T18:00:33.460+09:00  INFO 2284 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-20T18:00:33.464+09:00  INFO 2284 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.525 seconds (process running for 217.53)
+2024-05-20T18:00:33.465+09:00  INFO 2284 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-20T18:00:46.498+09:00  INFO 2284 --- [FinalProject] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
