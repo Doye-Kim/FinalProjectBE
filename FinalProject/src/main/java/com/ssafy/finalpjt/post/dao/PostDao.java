@@ -10,8 +10,16 @@ import com.ssafy.finalpjt.post.dto.PostDto;
 @Mapper
 public interface PostDao {
 	List<PostDto> postList();
+
 	PostDto postDetail(int postSeq);
+
 	int postInsert(Map<String, String> map);
+
 	int postUpdate(PostDto dto);
+
 	int postDelete(int postSeq);
+
+	void incrementLikeCount(int postSeq);
+
+	void decrementLikeCount(int postSeq);
 }

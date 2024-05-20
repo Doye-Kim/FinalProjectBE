@@ -1,7 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- sql 작성 -->
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.finalpjt.plan.dao.PlanDao">
 
-<mapper namespace="com.mycom.pjt.bookmark.dao.BookmarkDao">
+    <insert id="insertPlan" parameterType="com.ssafy.finalpjt.plan.dto.PlanDto" useGeneratedKeys="true" keyProperty="planSeq">
+    INSERT INTO plan (plan_date, content_id, user_seq)
+    VALUES (#{planDate}, #{contentId}, #{userSeq})
+</insert>
 
+    <delete id="deletePlan" parameterType="int">
+        DELETE FROM plan WHERE plan_seq = #{planSeq}
+    </delete>
+
+    <select id="listPlan" resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
+        SELECT plan_seq, plan_date, content_id, user_seq
+        FROM plan
+    </select>
 </mapper>
