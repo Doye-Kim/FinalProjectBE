@@ -61,4 +61,11 @@
 		WHERE post_seq = #{postSeq} AND
 		like_count > 0
 	</update>
+	
+	<!--  조회수 업데이트 -->
+	<update id="incrementViewCount" parameterType="int">
+    UPDATE post
+    SET view_count = view_count + 1
+    WHERE post_seq = #{postSeq}
+</update>
 </mapper>
