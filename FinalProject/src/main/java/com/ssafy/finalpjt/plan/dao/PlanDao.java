@@ -15,5 +15,5 @@ public interface PlanDao {
     List<PlanDto> listPlan(int userSeq);
     
     // 월별 조회
-    List<PlanDto> listPlanMonth(@Param("userSeq") int userSeq, @Param("month") int month);
+    List<PlanDto> listPlanMonth(@Param("userSeq") int userSeq, @Param("year") int year ,@Param("month") int month);
 }

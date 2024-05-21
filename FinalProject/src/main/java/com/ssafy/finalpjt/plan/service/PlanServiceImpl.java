@@ -32,7 +32,7 @@ public class PlanServiceImpl implements PlanService{
 	}
 
 	@Override
-	public List<PlanDto> listPlanMonth(int userSeq, int month) {
-	    return planDao.listPlanMonth(userSeq, month);
+	public List<PlanDto> listPlanMonth(int userSeq, int year, int month) {
+	    return planDao.listPlanMonth(userSeq, year, month);
 	}
 }

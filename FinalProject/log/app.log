@@ -4514,3 +4514,24 @@ org.apache.ibatis.binding.BindingException: Parameter 'userSeq' not found. Avail
 2024-05-21T14:54:36.637+09:00  INFO 12096 --- [FinalProject] [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
 2024-05-21T14:54:36.650+09:00  INFO 12096 --- [FinalProject] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-21T14:54:36.655+09:00  INFO 12096 --- [FinalProject] [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-21T15:00:24.695+09:00  INFO 16304 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 16304 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
+2024-05-21T15:00:24.696+09:00  INFO 16304 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-21T15:00:24.731+09:00  INFO 16304 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-21T15:00:24.731+09:00  INFO 16304 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-21T15:00:25.518+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-21T15:00:25.525+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-21T15:00:25.526+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-21T15:00:25.559+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-21T15:00:25.560+09:00  INFO 16304 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 829 ms
+2024-05-21T15:00:26.333+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-21T15:00:26.360+09:00  INFO 16304 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-21T15:00:26.367+09:00  INFO 16304 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 1.921 seconds (process running for 2.335)
+2024-05-21T15:00:50.715+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-21T15:00:50.715+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-21T15:00:50.715+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-21T15:00:50.747+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-21T15:00:50.922+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c946a3a
+2024-05-21T15:00:50.924+09:00  INFO 16304 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-21T15:01:13.141+09:00  INFO 16304 --- [FinalProject] [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-21T15:01:13.151+09:00  INFO 16304 --- [FinalProject] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-21T15:01:13.156+09:00  INFO 16304 --- [FinalProject] [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

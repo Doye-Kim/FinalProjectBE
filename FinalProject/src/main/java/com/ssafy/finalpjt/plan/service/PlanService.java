@@ -9,5 +9,5 @@ public interface PlanService {
     int deletePlan(int planSeq);
     List<PlanDto> listPlan(int userSeq);
     
-    List<PlanDto> listPlanMonth(int userSeq, int month);
+    List<PlanDto> listPlanMonth(int userSeq, int year, int month);
 }

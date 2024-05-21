@@ -2,26 +2,32 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ssafy.finalpjt.plan.dao.PlanDao">
 
-    <insert id="insertPlan" parameterType="com.ssafy.finalpjt.plan.dto.PlanDto" useGeneratedKeys="true" keyProperty="planSeq">
-    INSERT INTO plan (plan_date, content_id, user_seq)
-    VALUES (#{planDate}, #{contentId}, #{userSeq})
-</insert>
+	<insert id="insertPlan"
+		parameterType="com.ssafy.finalpjt.plan.dto.PlanDto"
+		useGeneratedKeys="true" keyProperty="planSeq">
+		INSERT INTO plan (plan_date, content_id, user_seq)
+		VALUES (#{planDate}, #{contentId}, #{userSeq})
+	</insert>
 
-    <delete id="deletePlan" parameterType="int">
-        DELETE FROM plan WHERE plan_seq = #{planSeq}
-    </delete>
+	<delete id="deletePlan" parameterType="int">
+		DELETE FROM plan WHERE plan_seq = #{planSeq}
+	</delete>
 
-    <select id="listPlan" resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
-        SELECT plan_seq, plan_date, content_id, user_seq
-    FROM plan
-    WHERE user_seq = #{userSeq}
+	<select id="listPlan"
+		resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
+		SELECT plan_seq, plan_date, content_id, user_seq
+		FROM plan
+		WHERE user_seq = #{userSeq}
 
-    </select>
-    
-    <!--  월별 조회 -->
-    <select id="listPlanMonth" resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
-    SELECT plan_seq, plan_date, content_id, user_seq
-    FROM plan
-    WHERE user_seq = #{userSeq} AND MONTH(plan_date) = #{month}
-</select>
+	</select>
+
+	<!-- 월별 조회 -->
+	<select id="listPlanMonth"
+		resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
+		SELECT plan_seq, plan_date, content_id, user_seq
+		FROM plan
+		WHERE user_seq = #{userSeq}
+		AND YEAR(plan_date) = #{year}
+		AND MONTH(plan_date) = #{month}
+	</select>
 </mapper>

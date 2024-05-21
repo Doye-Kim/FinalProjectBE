@@ -39,8 +39,8 @@ public class PlanController {
     }
     
     // 월별 조회
-    @GetMapping("/plans/{userSeq}/{month}")
-    public List<PlanDto> listPlanMonth(@PathVariable("userSeq") int userSeq, @PathVariable("month") int month) {
-        return planService.listPlanMonth(userSeq, month);
+    @GetMapping("/plans/{userSeq}/{year}/{month}")
+    public List<PlanDto> listPlanMonth(@PathVariable("userSeq") int userSeq, @PathVariable("year") int year, @PathVariable("month") int month) {
+        return planService.listPlanMonth(userSeq, year, month);
     }
 }
