@@ -13,6 +13,15 @@
 
     <select id="listPlan" resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
         SELECT plan_seq, plan_date, content_id, user_seq
-        FROM plan
+    FROM plan
+    WHERE user_seq = #{userSeq}
+
     </select>
+    
+    <!--  월별 조회 -->
+    <select id="listPlanMonth" resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
+    SELECT plan_seq, plan_date, content_id, user_seq
+    FROM plan
+    WHERE user_seq = #{userSeq} AND MONTH(plan_date) = #{month}
+</select>
 </mapper>

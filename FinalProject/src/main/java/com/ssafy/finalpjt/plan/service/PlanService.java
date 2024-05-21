@@ -7,5 +7,7 @@ import com.ssafy.finalpjt.plan.dto.PlanDto;
 public interface PlanService {
 	int insertPlan(PlanDto planDto);
     int deletePlan(int planSeq);
-    List<PlanDto> listPlan();
+    List<PlanDto> listPlan(int userSeq);
+    
+    List<PlanDto> listPlanMonth(int userSeq, int month);
 }

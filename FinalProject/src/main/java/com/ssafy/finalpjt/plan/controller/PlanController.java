@@ -20,18 +20,27 @@ public class PlanController {
 	
 	private final PlanService planService;
 
+	// 등록
 	@PostMapping("/plans")
 	public int insertPlan(@RequestBody PlanDto planDto) {
 	    return planService.insertPlan(planDto);
 	}
 
+	// 삭제
 	@DeleteMapping("/plans/{planSeq}")
-	public int deletePlan(@PathVariable int planSeq) {
+	public int deletePlan(@PathVariable("planSeq") int planSeq) {
 	    return planService.deletePlan(planSeq);
 	}
 
-    @GetMapping("/plans")
-    public List<PlanDto> listPlan() {
-        return planService.listPlan();
+	// 조회
+    @GetMapping("/plans/{userSeq}")
+    public List<PlanDto> listPlan(@PathVariable("userSeq") int userSeq) {
+        return planService.listPlan(userSeq);
+    }
+    
+    // 월별 조회
+    @GetMapping("/plans/{userSeq}/{month}")
+    public List<PlanDto> listPlanMonth(@PathVariable("userSeq") int userSeq, @PathVariable("month") int month) {
+        return planService.listPlanMonth(userSeq, month);
     }
 }

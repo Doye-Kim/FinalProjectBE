@@ -27,8 +27,12 @@ public class PlanServiceImpl implements PlanService{
 	}
 
 	@Override
-	public List<PlanDto> listPlan() {
-		return planDao.listPlan();
+	public List<PlanDto> listPlan(int userSeq) {
+		return planDao.listPlan(userSeq);
 	}
 
+	@Override
+	public List<PlanDto> listPlanMonth(int userSeq, int month) {
+	    return planDao.listPlanMonth(userSeq, month);
+	}
 }
