@@ -4,43 +4,68 @@
 
 <mapper namespace="com.ssafy.finalpjt.post.dao.PostDao">
 	<!-- BoardDao 5개 메소드와 동일한 sql 작성 -->
-	
+
 	<!-- 게시글 목록 조회 -->
-	<select id="postList" resultType="com.ssafy.finalpjt.post.dto.PostDto">
+	<select id="postList"
+		resultType="com.ssafy.finalpjt.post.dto.PostDto">
 		SELECT * FROM post
 	</select>
 
 	<!-- 게시글 상세 조회 -->
-    <select id="postDetail" parameterType="int" resultType="com.ssafy.finalpjt.post.dto.PostDto">
-    SELECT * FROM post
-    WHERE post_seq = #{postSeq}
-</select>
-    
-    <!-- 게시글 등록 -->
-    <insert id="postInsert" parameterType="map" useGeneratedKeys="true" keyProperty="postSeq">
-    INSERT INTO post 
-    (
-    	post_title, post_content, post_time, update_time, like_count, view_count, user_seq
-    )
-    VALUES 
-    (
-    	#{title}, #{content}, NOW(), NOW(), 0, 0, #{userSeq}
-    )
-	</insert>
-    
-    <!-- 게시글 수정 -->
-    <update id="postUpdate" parameterType="com.ssafy.finalpjt.post.dto.PostDto">
-        UPDATE post
-        SET post_title = #{postTitle},
-            post_content = #{postContent},
-            update_time = NOW()
-        WHERE post_seq = #{postSeq}
-    </update>
-    
-    <!-- 게시글 삭제 -->
-    <delete id="postDelete" parameterType="int">
-        DELETE FROM post
-        WHERE post_seq = #{postSeq}
-    </delete>
+	<select id="postDetail" parameterType="int"
+		resultType="com.ssafy.finalpjt.post.dto.PostDto">
+		SELECT * FROM post
+		WHERE post_seq = #{postSeq}
+	</select>
 
+	<!-- 게시글 등록 -->
+	<insert id="postInsert" parameterType="map"
+		useGeneratedKeys="true" keyProperty="postSeq">
+		INSERT INTO post
+		(
+		post_title, post_content, post_time, update_time, like_count, view_count,
+		user_seq
+		)
+		VALUES
+		(
+		#{title}, #{content}, NOW(), NOW(), 0, 0, #{userSeq}
+		)
+	</insert>
+
+	<!-- 게시글 수정 -->
+	<update id="postUpdate"
+		parameterType="com.ssafy.finalpjt.post.dto.PostDto">
+		UPDATE post
+		SET post_title = #{postTitle},
+		post_content = #{postContent},
+		update_time = NOW()
+		WHERE post_seq = #{postSeq}
+	</update>
+
+	<!-- 게시글 삭제 -->
+	<delete id="postDelete" parameterType="int">
+		DELETE FROM post
+		WHERE post_seq = #{postSeq}
+	</delete>
+
+<!-- 좋아요 수 업데이트 -->
+	<update id="incrementLikeCount" parameterType="int">
+		UPDATE post
+		SET like_count = like_count + 1
+		WHERE post_seq = #{postSeq}
+	</update>
+
+	<update id="decrementLikeCount" parameterType="int">
+		UPDATE post
+		SET like_count = like_count - 1
+		WHERE post_seq = #{postSeq} AND
+		like_count > 0
+	</update>
+	
+	<!--  조회수 업데이트 -->
+	<update id="incrementViewCount" parameterType="int">
+    UPDATE post
+    SET view_count = view_count + 1
+    WHERE post_seq = #{postSeq}
+</update>
 </mapper>

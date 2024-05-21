@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- sql 작성 -->
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.mycom.pjt.bookmark.dao.BookmarkDao">
 
+	<insert id="insertBookmark"
+		parameterType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto" useGeneratedKeys="true" keyProperty="bookmarkSeq">
+		INSERT INTO bookmark (user_seq, content_id, register_time)
+		VALUES (#{userSeq}, #{contentId}, NOW())
+	</insert>
+
+	<delete id="deleteBookmark" parameterType="int">
+		DELETE FROM bookmark
+		WHERE user_seq = #{userSeq} AND content_id = #{contentId}
+	</delete>
+
+	<select id="getBookmarksByUser" parameterType="int"
+		resultType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto">
+		SELECT bookmark_seq, user_seq, content_id, register_time
+		FROM bookmark
+		WHERE user_seq = #{userSeq}
+	</select>
+
+	<select id="isBookmarkedByUser" resultType="boolean">
+		SELECT COUNT(*) > 0
+		FROM bookmark
+		WHERE user_seq = #{userSeq} AND content_id = #{contentId}
+	</select>
 </mapper>
