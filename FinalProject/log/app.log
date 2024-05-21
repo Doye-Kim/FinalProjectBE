@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 2024-05-21T08:41:30.273+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 9144 (C:\Users\SSAFY\Desktop\pull\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\Desktop\pull\FinalProject)
 2024-05-21T08:41:30.276+09:00  INFO 9144 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
 2024-05-21T08:41:30.306+09:00  INFO 9144 --- [FinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
