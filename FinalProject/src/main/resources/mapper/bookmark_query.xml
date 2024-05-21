@@ -2,7 +2,7 @@
 <!-- sql 작성 -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.mycom.pjt.bookmark.dao.BookmarkDao">
+<mapper namespace="com.mycom.finalpjt.bookmark.dao.BookmarkDao">
 
 	<insert id="insertBookmark"
 		parameterType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto"
@@ -27,8 +27,8 @@
 	</select>
 
 	<select id="isBookmarkedByUser" resultType="boolean">
-		SELECT COUNT(*) > 0
-		FROM bookmark
-		WHERE user_seq = #{userSeq} AND content_id = #{contentId}
-	</select>
+    SELECT COUNT(*) > 0
+    FROM bookmark
+    WHERE user_seq = #{userSeq} AND content_id = #{contentId}
+</select>
 </mapper>
