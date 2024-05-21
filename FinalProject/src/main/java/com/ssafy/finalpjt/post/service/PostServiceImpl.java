@@ -42,5 +42,22 @@ public class PostServiceImpl implements PostService{
 	}
 	
 	
+	// 내가 쓴 글 목록
+	@Override
+	public List<PostDto> myPostList(int userSeq) {
+	    return postDao.myPostList(userSeq);
+	}
+	
+	// 내가 댓글 단 글 목록
+	@Override
+	public List<PostDto> myCommentedPostList(int userSeq) {
+	    return postDao.myCommentedPostList(userSeq);
+	}
+	
+	// 내가 좋아요 누른 글 목록
+	@Override
+	public List<PostDto> myLikedPostList(int userSeq) {
+	    return postDao.myLikedPostList(userSeq);
+	}
 
 }

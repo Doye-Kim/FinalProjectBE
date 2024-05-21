@@ -5,8 +5,10 @@
 <mapper namespace="com.mycom.pjt.bookmark.dao.BookmarkDao">
 
 	<insert id="insertBookmark"
-		parameterType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto" useGeneratedKeys="true" keyProperty="bookmarkSeq">
-		INSERT INTO bookmark (user_seq, content_id, register_time)
+		parameterType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto"
+		useGeneratedKeys="true" keyProperty="bookmarkSeq">
+		INSERT INTO bookmark (user_seq,
+		content_id, register_time)
 		VALUES (#{userSeq}, #{contentId}, NOW())
 	</insert>
 
@@ -17,9 +19,11 @@
 
 	<select id="getBookmarksByUser" parameterType="int"
 		resultType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto">
-		SELECT bookmark_seq, user_seq, content_id, register_time
-		FROM bookmark
-		WHERE user_seq = #{userSeq}
+		SELECT b.bookmark_seq, b.user_seq, b.content_id,
+		b.register_time, a.title, a.addr1
+		FROM bookmark b
+		JOIN attraction_info a ON b.content_id = a.content_id
+		WHERE b.user_seq = #{userSeq}
 	</select>
 
 	<select id="isBookmarkedByUser" resultType="boolean">

@@ -18,4 +18,8 @@ public class BookmarkDto {
 	// 외래키
 	private int userSeq;
 	private int contentId;
+	
+	// 북마크 했을 때 보일 관광지 명, 관광지 주소
+	private String title;
+	private String addr1;
 }

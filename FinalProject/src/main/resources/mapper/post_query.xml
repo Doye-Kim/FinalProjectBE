@@ -11,6 +11,39 @@
 		SELECT * FROM post
 	</select>
 
+	<!-- 내가 쓴 글 목록 -->
+	<select id="myPostList" parameterType="int"
+		resultType="com.ssafy.finalpjt.post.dto.PostDto">
+		SELECT *
+		FROM post
+		WHERE user_seq = #{userSeq}
+		ORDER BY
+		post_time DESC
+	</select>
+
+	<!-- 내가 댓글 단 글 목록 -->
+	<select id="myCommentedPostList" parameterType="int"
+		resultType="com.ssafy.finalpjt.post.dto.PostDto">
+		SELECT p.post_seq, p.post_title, p.post_content, p.post_time, p.update_time,
+		p.like_count, p.view_count, p.user_seq
+		FROM post p
+		INNER JOIN comment c ON p.post_seq = c.post_seq
+		WHERE c.user_seq = #{userSeq}
+		GROUP BY p.post_seq
+		ORDER BY MAX(c.comment_time) DESC
+	</select>
+
+
+	<!-- 내가 좋아요 누른 글 목록 -->
+	<select id="myLikedPostList" parameterType="int"
+		resultType="com.ssafy.finalpjt.post.dto.PostDto">
+		SELECT p.post_seq, p.post_title, p.post_content, p.post_time, p.update_time,
+		p.like_count, p.view_count, p.user_seq
+		FROM post p
+		INNER JOIN post_like_user plu ON p.post_seq = plu.post_seq
+		WHERE plu.user_seq = #{userSeq}
+		ORDER BY plu.like_time DESC
+	</select>
 	<!-- 게시글 상세 조회 -->
 	<select id="postDetail" parameterType="int"
 		resultType="com.ssafy.finalpjt.post.dto.PostDto">
@@ -23,7 +56,8 @@
 		useGeneratedKeys="true" keyProperty="postSeq">
 		INSERT INTO post
 		(
-		post_title, post_content, post_time, update_time, like_count, view_count,
+		post_title,
+		post_content, post_time, update_time, like_count, view_count,
 		user_seq
 		)
 		VALUES
@@ -37,7 +71,8 @@
 		parameterType="com.ssafy.finalpjt.post.dto.PostDto">
 		UPDATE post
 		SET post_title = #{postTitle},
-		post_content = #{postContent},
+		post_content =
+		#{postContent},
 		update_time = NOW()
 		WHERE post_seq = #{postSeq}
 	</update>
@@ -45,27 +80,32 @@
 	<!-- 게시글 삭제 -->
 	<delete id="postDelete" parameterType="int">
 		DELETE FROM post
-		WHERE post_seq = #{postSeq}
+		WHERE
+		post_seq = #{postSeq}
 	</delete>
 
-<!-- 좋아요 수 업데이트 -->
+	<!-- 좋아요 수 업데이트 -->
 	<update id="incrementLikeCount" parameterType="int">
 		UPDATE post
-		SET like_count = like_count + 1
+		SET
+		like_count = like_count + 1
 		WHERE post_seq = #{postSeq}
 	</update>
 
 	<update id="decrementLikeCount" parameterType="int">
 		UPDATE post
-		SET like_count = like_count - 1
+		SET
+		like_count = like_count - 1
 		WHERE post_seq = #{postSeq} AND
-		like_count > 0
+		like_count >
+		0
 	</update>
-	
-	<!--  조회수 업데이트 -->
+
+	<!-- 조회수 업데이트 -->
 	<update id="incrementViewCount" parameterType="int">
-    UPDATE post
-    SET view_count = view_count + 1
-    WHERE post_seq = #{postSeq}
-</update>
+		UPDATE post
+		SET
+		view_count = view_count + 1
+		WHERE post_seq = #{postSeq}
+	</update>
 </mapper>

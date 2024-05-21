@@ -27,12 +27,12 @@ public class BookmarkController {
     }
 
     @DeleteMapping("/bookmarks/{userSeq}/{contentId}")
-    public int removeBookmark(@PathVariable int userSeq, @PathVariable int contentId) {
+    public int removeBookmark(@PathVariable("userSeq") int userSeq, @PathVariable("contentId") int contentId) {
         return bookmarkService.removeBookmark(userSeq, contentId);
     }
 
     @GetMapping("/bookmarks/{userSeq}")
-    public List<BookmarkDto> getBookmarksByUser(@PathVariable int userSeq) {
+    public List<BookmarkDto> getBookmarksByUser(@PathVariable("userSeq") int userSeq) {
         return bookmarkService.getBookmarksByUser(userSeq);
     }
 }
