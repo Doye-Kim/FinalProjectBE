@@ -49,4 +49,8 @@ public class UserController {
 	public String UserFindPassword(@PathVariable("userSeq") int userSeq) {
 		return userService.userFindPassword(userSeq);
 	}
+	@GetMapping("/users")
+	public UserDto getUserByPhone(@RequestParam("user_phone") String user_phone) {
+		return userService.getUserByPhone(user_phone);
+	}
 }
