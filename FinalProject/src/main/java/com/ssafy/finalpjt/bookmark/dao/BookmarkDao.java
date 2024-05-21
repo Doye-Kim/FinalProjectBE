@@ -21,4 +21,6 @@ public interface BookmarkDao {
 	
 	// 이미 북마크 했는지 확인
 	boolean isBookmarkedByUser(@Param("userSeq") int userSeq, @Param("contentId") int contentId);
+	
+
 }

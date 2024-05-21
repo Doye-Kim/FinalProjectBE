@@ -35,4 +35,6 @@ public class BookmarkController {
     public List<BookmarkDto> getBookmarksByUser(@PathVariable("userSeq") int userSeq) {
         return bookmarkService.getBookmarksByUser(userSeq);
     }
+    
+
 }

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
 <mapper namespace="com.ssafy.finalpjt.follow.dao.FollowDao">
-	<insert id="followRegister" parameterType="Map">
-		insert into follow 
-		(
-			from_seq, to_seq, follow_time
-		)
-		values
-		( 
-		 	#{fromSeq}, #{toSeq}, now()
-		)
-	</insert>
-	<delete id="followDelete" parameterType="int">
-		delete from follow
-			where follow_seq = #{followSeq}
-	</delete>
-	
-	<select id="followList" parameterType="int" resultType="com.ssafy.finalpjt.follow.dto.FollowDto">
-		select * from follow
-			where from_seq = #{fromSeq}
-	</select>
+    <insert id="followRegister" parameterType="Map">
+        insert into follow 
+        (
+            from_seq, to_seq, follow_time
+        )
+        values
+        ( 
+             #{fromSeq}, #{toSeq}, now()
+        )
+    </insert>
+    <delete id="followDelete" parameterType="int">
+        delete from follow
+            where follow_seq = #{followSeq}
+    </delete>
+    
+    <select id="followList" parameterType="int" resultType="com.ssafy.finalpjt.follow.dto.FollowDto">
+        select f.follow_seq follow_seq, f.from_seq from_seq, f.to_seq to_seq, f.follow_time follow_time, u.user_nickname nickname
+            from follow f, user u
+            where f.from_seq = #{fromSeq} and u.user_seq = f.to_seq and u.is_quit = 0
+    </select>
 
 </mapper>

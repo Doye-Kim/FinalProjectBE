@@ -36,4 +36,5 @@ public class BookmarkServiceImpl implements BookmarkService{
         return bookmarkDao.getBookmarksByUser(userSeq);
     }
 
+
 }

@@ -22,13 +22,17 @@
 		SELECT b.bookmark_seq, b.user_seq, b.content_id,
 		b.register_time, a.title, a.addr1
 		FROM bookmark b
-		JOIN attraction_info a ON b.content_id = a.content_id
+		JOIN attraction_info a
+		ON b.content_id = a.content_id
 		WHERE b.user_seq = #{userSeq}
 	</select>
 
 	<select id="isBookmarkedByUser" resultType="boolean">
-    SELECT COUNT(*) > 0
-    FROM bookmark
-    WHERE user_seq = #{userSeq} AND content_id = #{contentId}
-</select>
+		SELECT COUNT(*) > 0
+		FROM bookmark
+		WHERE user_seq = #{userSeq} AND content_id = #{contentId}
+	</select>
+
+
+
 </mapper>

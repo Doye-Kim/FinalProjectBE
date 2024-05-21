@@ -34,6 +34,7 @@ public class FollowController {
 	public int delete(@RequestParam("followSeq") int followSeq) {
 		return followService.followDelete(followSeq);
 	}
+	
 	@GetMapping("/follows/{fromSeq}")
 	public List<FollowDto> get(@PathVariable("fromSeq") int fromSeq) {
 		return followService.followList(fromSeq);

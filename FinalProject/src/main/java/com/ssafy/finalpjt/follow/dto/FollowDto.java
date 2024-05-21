@@ -12,9 +12,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class FollowDto {
-	private int followSeq;
-	private int fromSeq;
-	private int toSeq;
-	private String followTime;
+    private int followSeq;
+    private int fromSeq;
+    private int toSeq;
+    private String followTime;
+    private String nickname;
 }
-

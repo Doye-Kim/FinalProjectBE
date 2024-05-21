@@ -8,4 +8,6 @@ public interface BookmarkService {
 	int addBookmark(BookmarkDto bookmarkDto);
     int removeBookmark(int userSeq, int contentId);
     List<BookmarkDto> getBookmarksByUser(int userSeq);
+    
+
 }
