@@ -11,4 +11,7 @@ public interface AttractionService {
 	List<GugunCodeDto> gugunList(int sidoCode);
 	List<SidoCodeDto> sidoList();
 	List<PlaceDto> placeList(Map<String, Integer> map);
+	
+	// 관광지 검색
+	List<PlaceDto> searchAttraction(String title);
 }

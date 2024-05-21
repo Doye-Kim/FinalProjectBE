@@ -12,7 +12,11 @@ import com.ssafy.finalpjt.attraction.dto.SidoCodeDto;
 @Mapper
 public interface AttractionDao {
 	List<GugunCodeDto> gugunList(int sidoCode);
-	List<SidoCodeDto> sidoList();
-	List<PlaceDto> placeList(Map<String, Integer> map);
-}
 
+	List<SidoCodeDto> sidoList();
+
+	List<PlaceDto> placeList(Map<String, Integer> map);
+
+	// 관광지 검색
+	List<PlaceDto> searchAttraction(String title);
+}

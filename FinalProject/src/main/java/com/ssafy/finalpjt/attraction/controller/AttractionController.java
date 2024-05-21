@@ -42,4 +42,10 @@ public class AttractionController {
 		List<PlaceDto> list = attractionService.placeList(map);
 		return list;
 	}
+	
+	// 관광지 검색
+	@GetMapping("/search")
+    public List<PlaceDto> searchAttraction(@RequestParam("title") String title) {
+        return attractionService.searchAttraction(title);
+    }
 }

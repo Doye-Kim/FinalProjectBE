@@ -31,5 +31,10 @@ public class AttractionServiceImpl implements AttractionService{
 	public List<PlaceDto> placeList(Map<String, Integer> map) {
 		return tripDao.placeList(map);
 	}
+	
+	@Override
+    public List<PlaceDto> searchAttraction(String title) {
+        return tripDao.searchAttraction(title);
+    }
 
 }
