@@ -9,6 +9,8 @@
 	<select id="postList"
 		resultType="com.ssafy.finalpjt.post.dto.PostDto">
 		SELECT * FROM post
+		ORDER BY
+		post_time DESC
 	</select>
 
 	<!-- 내가 쓴 글 목록 -->

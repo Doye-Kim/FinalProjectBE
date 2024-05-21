@@ -22,4 +22,9 @@ public class BookmarkDto {
 	// 북마크 했을 때 보일 관광지 명, 관광지 주소
 	private String title;
 	private String addr1;
+	private String firstImage;
+	
+	private double mapy;
+	private double mapx;
+
 }

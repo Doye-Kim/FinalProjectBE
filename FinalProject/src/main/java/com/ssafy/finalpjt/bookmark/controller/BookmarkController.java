@@ -26,9 +26,9 @@ public class BookmarkController {
         return bookmarkService.addBookmark(bookmarkDto);
     }
 
-    @DeleteMapping("/bookmarks/{userSeq}/{contentId}")
-    public int removeBookmark(@PathVariable("userSeq") int userSeq, @PathVariable("contentId") int contentId) {
-        return bookmarkService.removeBookmark(userSeq, contentId);
+    @DeleteMapping("/bookmarks/{bookmarkSeq}")
+    public int removeBookmark(@PathVariable("bookmarkSeq") int bookmarkSeq) {
+        return bookmarkService.removeBookmark(bookmarkSeq);
     }
 
     @GetMapping("/bookmarks/{userSeq}")

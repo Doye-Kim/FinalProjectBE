@@ -25,13 +25,11 @@ public class AttractionController {
 
 	@GetMapping("/sido")
 	public List<SidoCodeDto> sidoCodeList(){
-		List<SidoCodeDto> list = attractionService.sidoList();
-		return list;
+		return attractionService.sidoList();
 	}
 	@GetMapping("/gugun/{sidoCode}")
 	public List<GugunCodeDto> gugunCodeList(@PathVariable("sidoCode") int sidoCode){
-		List<GugunCodeDto> list = attractionService.gugunList(sidoCode);
-		return list;
+		return attractionService.gugunList(sidoCode);
 	}
 	@GetMapping("/place")
 	public List<PlaceDto> placeList(@RequestParam("contentTypeId") int contentTypeId, @RequestParam("sidoCode") int sidoCode, @RequestParam("gugunCode") int gugunCode){
@@ -39,8 +37,7 @@ public class AttractionController {
 		map.put("contentTypeId", contentTypeId);
 		map.put("sidoCode", sidoCode);
 		map.put("gugunCode", gugunCode);
-		List<PlaceDto> list = attractionService.placeList(map);
-		return list;
+		return attractionService.placeList(map);
 	}
 	
 	// 관광지 검색
@@ -48,4 +45,8 @@ public class AttractionController {
     public List<PlaceDto> searchAttraction(@RequestParam("title") String title) {
         return attractionService.searchAttraction(title);
     }
+	@GetMapping("/place/{contentId}")
+	public PlaceDto getPlace(@PathVariable("contentId") int contentId){
+		return attractionService.getPlace(contentId);
+	}
 }

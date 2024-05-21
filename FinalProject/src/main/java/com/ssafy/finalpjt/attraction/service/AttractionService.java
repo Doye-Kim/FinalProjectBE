@@ -14,4 +14,5 @@ public interface AttractionService {
 	
 	// 관광지 검색
 	List<PlaceDto> searchAttraction(String title);
+	PlaceDto getPlace(int contentId);
 }

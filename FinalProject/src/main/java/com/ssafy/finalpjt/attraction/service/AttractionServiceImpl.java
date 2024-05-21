@@ -16,25 +16,30 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class AttractionServiceImpl implements AttractionService{
 
-	private final AttractionDao tripDao;
+	private final AttractionDao attractionDao;
 	@Override
 	public List<GugunCodeDto> gugunList(int siCode) {
-		return tripDao.gugunList(siCode);
+		return attractionDao.gugunList(siCode);
 	}
 
 	@Override
 	public List<SidoCodeDto> sidoList() {
-		return tripDao.sidoList();
+		return attractionDao.sidoList();
 	}
 
 	@Override
 	public List<PlaceDto> placeList(Map<String, Integer> map) {
-		return tripDao.placeList(map);
+		return attractionDao.placeList(map);
 	}
 	
 	@Override
     public List<PlaceDto> searchAttraction(String title) {
-        return tripDao.searchAttraction(title);
+        return attractionDao.searchAttraction(title);
     }
+
+	@Override
+	public PlaceDto getPlace(int contentId) {
+		return attractionDao.getPlace(contentId);
+	}
 
 }

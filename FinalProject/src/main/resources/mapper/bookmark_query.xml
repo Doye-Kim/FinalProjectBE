@@ -14,13 +14,13 @@
 
 	<delete id="deleteBookmark" parameterType="int">
 		DELETE FROM bookmark
-		WHERE user_seq = #{userSeq} AND content_id = #{contentId}
+		WHERE bookmark_seq = #{bookmarkSeq}
 	</delete>
 
 	<select id="getBookmarksByUser" parameterType="int"
 		resultType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto">
 		SELECT b.bookmark_seq, b.user_seq, b.content_id,
-		b.register_time, a.title, a.addr1
+		b.register_time, a.title, a.addr1, a.first_image, a.latitude as mapy, a.longitude as mapx
 		FROM bookmark b
 		JOIN attraction_info a
 		ON b.content_id = a.content_id

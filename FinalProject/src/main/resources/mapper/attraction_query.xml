@@ -5,32 +5,36 @@
 	<select id="gugunList"
 		resultType="com.ssafy.finalpjt.attraction.dto.GugunCodeDto">
 		select gugun_code, gugun_name, sido_code
-		from gugun
-		where
-		sido_code = #{sidoCode}
+			from gugun
+			where sido_code = #{sidoCode}
 	</select>
 	<select id="sidoList"
 		resultType="com.ssafy.finalpjt.attraction.dto.SidoCodeDto">
 		select sido_code, sido_name
-		from sido
+			from sido
 	</select>
 	<select id="placeList" parameterType="HashMap"
 		resultType="com.ssafy.finalpjt.attraction.dto.PlaceDto">
-		select title, addr1, latitude as mapy, longitude as mapx,
-		content_id
-		from attraction_info
-		where content_type_id = #{contentTypeId}
-		and sido_code = #{sidoCode} and
-		gugun_code = #{gugunCode}
+		select title, addr1, latitude as mapy, longitude as mapx, content_id, first_image
+			from attraction_info
+			where content_type_id = #{contentTypeId}
+			 and sido_code = #{sidoCode} 
+			 and gugun_code = #{gugunCode}
 	</select>
 
 
 	<!--  관광지 검색 -->
 	<select id="searchAttraction"
 		resultType="com.ssafy.finalpjt.attraction.dto.PlaceDto">
-		SELECT content_id, title, addr1
-		FROM attraction_info
-		WHERE title LIKE CONCAT('%', #{title}, '%')
+		SELECT title, addr1, latitude as mapy, longitude as mapx, content_id, first_image
+			FROM attraction_info
+			WHERE title LIKE CONCAT('%', #{title}, '%')
+	</select>
+	
+	<select id="getPlace" resultType="com.ssafy.finalpjt.attraction.dto.PlaceDto">
+		SELECT title, addr1, latitude as mapy, longitude as mapx, content_id, first_image
+			FROM attraction_info
+			WHERE content_id = #{contentId}
 	</select>
 
 </mapper>
