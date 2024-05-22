@@ -44,7 +44,7 @@
 		FROM post p
 		INNER JOIN post_like_user plu ON p.post_seq = plu.post_seq
 		WHERE plu.user_seq = #{userSeq}
-		 BY plu.like_time DESCORDER
+		ORDER BY plu.like_time DESC
 	</select>
 	<!-- 게시글 상세 조회 -->
 	<select id="postDetail" parameterType="int"
