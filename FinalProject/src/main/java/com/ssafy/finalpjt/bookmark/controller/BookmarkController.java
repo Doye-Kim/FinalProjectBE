@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.finalpjt.bookmark.dto.BookmarkDto;
+import com.ssafy.finalpjt.bookmark.dto.BookmarkResultDto;
 import com.ssafy.finalpjt.bookmark.service.BookmarkService;
 
 import lombok.AllArgsConstructor;
@@ -23,6 +24,7 @@ public class BookmarkController {
 
     @PostMapping("/bookmarks")
     public int addBookmark(@RequestBody BookmarkDto bookmarkDto) {
+    	System.out.println(bookmarkDto);
         return bookmarkService.addBookmark(bookmarkDto);
     }
 
@@ -32,7 +34,7 @@ public class BookmarkController {
     }
 
     @GetMapping("/bookmarks/{userSeq}")
-    public List<BookmarkDto> getBookmarksByUser(@PathVariable("userSeq") int userSeq) {
+    public List<BookmarkResultDto> getBookmarksByUser(@PathVariable("userSeq") int userSeq) {
         return bookmarkService.getBookmarksByUser(userSeq);
     }
     

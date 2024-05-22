@@ -34,7 +34,6 @@ public class PostController {
 		System.out.println(list);
 		return list;
 	}
-
 	// 내가 쓴 글 목록
 	@GetMapping("/posts/post-list")
 	public List<PostDto> myPostList(@RequestParam("userSeq") int userSeq) {
@@ -55,17 +54,17 @@ public class PostController {
 
 	// 상세
 	@GetMapping("/posts/{postSeq}")
-	public PostDto postDetail(@PathVariable("postSeq") int postSeq, @RequestParam("userSeq") int userSeq) {
+	public PostDto postDetail(@PathVariable("postSeq") int postSeq) {
 //		PostDto dto = postService.postDetail(postSeq);
 //		System.out.println(dto);
 //		return dto;
-
+		PostDto dto = postService.postDetail(postSeq);
+		
 		ViewDto viewDto = new ViewDto();
 		viewDto.setPostSeq(postSeq);
-		viewDto.setUserSeq(userSeq);
+		viewDto.setUserSeq(dto.getUserSeq());
 		viewService.incrementViewCount(viewDto);
 
-		PostDto dto = postService.postDetail(postSeq);
 		System.out.println(dto);
 		return dto;
 	}

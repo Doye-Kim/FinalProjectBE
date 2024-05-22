@@ -19,6 +19,6 @@ public class PlanDto {
 	// 외래키
 	private int contentId; // 관광지 Id
 	private int userSeq; // 유저 seq
-
+	private String title;
 	
 }

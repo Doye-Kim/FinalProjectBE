@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.ssafy.finalpjt.bookmark.dao.BookmarkDao;
 import com.ssafy.finalpjt.bookmark.dto.BookmarkDto;
+import com.ssafy.finalpjt.bookmark.dto.BookmarkResultDto;
 
 import lombok.AllArgsConstructor;
 
@@ -32,7 +33,7 @@ public class BookmarkServiceImpl implements BookmarkService{
     }
 
     @Override
-    public List<BookmarkDto> getBookmarksByUser(int userSeq) {
+    public List<BookmarkResultDto> getBookmarksByUser(int userSeq) {
         return bookmarkDao.getBookmarksByUser(userSeq);
     }
 

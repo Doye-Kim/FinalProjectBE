@@ -16,6 +16,6 @@ public class PlaceDto {
 	private String addr1;
 	private double mapy;
 	private double mapx;
-	private String first_image;
+	private String firstImage;
 	private int contentId;
 }

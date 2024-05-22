@@ -5,8 +5,8 @@
 	<insert id="insertPlan"
 		parameterType="com.ssafy.finalpjt.plan.dto.PlanDto"
 		useGeneratedKeys="true" keyProperty="planSeq">
-		INSERT INTO plan (plan_date, content_id, user_seq)
-		VALUES (#{planDate}, #{contentId}, #{userSeq})
+		INSERT INTO plan (plan_date, content_id, user_seq, title)
+		VALUES (#{planDate}, #{contentId}, #{userSeq}, #{title})
 	</insert>
 
 	<delete id="deletePlan" parameterType="int">
@@ -15,7 +15,7 @@
 
 	<select id="listPlan"
 		resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
-		SELECT plan_seq, plan_date, content_id, user_seq
+		SELECT *
 		FROM plan
 		WHERE user_seq = #{userSeq}
 

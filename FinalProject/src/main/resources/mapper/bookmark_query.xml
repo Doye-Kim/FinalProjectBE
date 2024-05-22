@@ -18,7 +18,7 @@
 	</delete>
 
 	<select id="getBookmarksByUser" parameterType="int"
-		resultType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto">
+		resultType="com.ssafy.finalpjt.bookmark.dto.BookmarkResultDto">
 		SELECT b.bookmark_seq, b.user_seq, b.content_id,
 		b.register_time, a.title, a.addr1, a.first_image, a.latitude as mapy, a.longitude as mapx
 		FROM bookmark b
