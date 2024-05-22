@@ -1,80 +1,41 @@
-2024-05-22T00:31:08.682+09:00  WARN 84429 --- [FinalProject] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=11m16s197ms).
-2024-05-22T00:32:35.543+09:00  WARN 84429 --- [FinalProject] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m26s862ms).
-2024-05-22T00:34:16.059+09:00  WARN 84429 --- [FinalProject] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m40s516ms).
-2024-05-22T00:41:06.405+09:00  WARN 84429 --- [FinalProject] [HikariPool-3 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=6m50s346ms).
-2024-05-22T00:51:52.994+09:00  INFO 84429 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-05-22T00:51:53.005+09:00  INFO 84429 --- [FinalProject] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2024-05-22T00:51:53.010+09:00  INFO 84429 --- [FinalProject] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2024-05-22T00:51:53.073+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 84429 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
-2024-05-22T00:51:53.073+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-05-22T00:51:53.239+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-22T00:51:53.240+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-22T00:51:53.240+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-22T00:51:53.246+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-22T00:51:53.246+09:00  INFO 84429 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
-2024-05-22T00:51:53.488+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-05-22T00:51:53.497+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-22T00:51:53.501+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.442 seconds (process running for 5632.791)
-2024-05-22T00:51:53.502+09:00  INFO 84429 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-05-22T00:52:15.577+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-22T00:52:15.578+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-22T00:52:15.580+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-05-22T00:52:15.584+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2024-05-22T00:52:15.606+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6524b1b7
-2024-05-22T00:52:15.606+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2024-05-22T01:47:02.802+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.ssafy.finalpjt.plan.controller.PlanController.insertPlan(com.ssafy.finalpjt.plan.dto.PlanDto)]
-2024-05-22T01:47:03.538+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-10] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target [/bookmarks?userSeq=1&title=[object+PointerEvent] ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
-
-2024-05-22T01:52:01.584+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.ssafy.finalpjt.plan.controller.PlanController.insertPlan(com.ssafy.finalpjt.plan.dto.PlanDto)]
-2024-05-22T02:00:12.741+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/x-www-form-urlencoded;charset=UTF-8' is not supported]
-2024-05-22T02:03:47.007+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.ssafy.finalpjt.plan.controller.PlanController.insertPlan(com.ssafy.finalpjt.plan.dto.PlanDto)]
-2024-05-22T02:05:43.736+09:00 ERROR 84429 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`final`.`plan`, CONSTRAINT `fk_plan_user` FOREIGN KEY (`user_seq`) REFERENCES `user` (`user_seq`))
-### The error may exist in mapper/plan_query.xml
-### The error may involve com.ssafy.finalpjt.plan.dao.PlanDao.insertPlan-Inline
+2024-05-23T00:42:23.446+09:00 ERROR 63634 --- [FinalProject] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY plu.like_time DESCORDER' at line 6
+### The error may exist in mapper/post_query.xml
+### The error may involve com.ssafy.finalpjt.post.dao.PostDao.myLikedPostList-Inline
 ### The error occurred while setting parameters
-### SQL: INSERT INTO plan (plan_date, content_id, user_seq)   VALUES (?, ?, ?)
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`final`.`plan`, CONSTRAINT `fk_plan_user` FOREIGN KEY (`user_seq`) REFERENCES `user` (`user_seq`))
-; Cannot add or update a child row: a foreign key constraint fails (`final`.`plan`, CONSTRAINT `fk_plan_user` FOREIGN KEY (`user_seq`) REFERENCES `user` (`user_seq`))] with root cause
+### SQL: SELECT p.post_seq, p.post_title, p.post_content, p.post_time, p.update_time,   p.like_count, p.view_count, p.user_seq   FROM post p   INNER JOIN post_like_user plu ON p.post_seq = plu.post_seq   WHERE plu.user_seq = ?    BY plu.like_time DESCORDER
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY plu.like_time DESCORDER' at line 6
+; bad SQL grammar []] with root cause
 
-java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`final`.`plan`, CONSTRAINT `fk_plan_user` FOREIGN KEY (`user_seq`) REFERENCES `user` (`user_seq`))
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY plu.like_time DESCORDER' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354) ~[mysql-connector-j-8.3.0.jar:8.3.0]
 	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-5.0.1.jar:na]
 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.14.jar:3.5.14]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142) ~[mybatis-3.5.14.jar:3.5.14]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at jdk.proxy2/jdk.proxy2.$Proxy70.insert(Unknown Source) ~[na:na]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272) ~[mybatis-spring-3.0.3.jar:3.0.3]
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62) ~[mybatis-3.5.14.jar:3.5.14]
+	at jdk.proxy2/jdk.proxy2.$Proxy70.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-3.0.3.jar:3.0.3]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147) ~[mybatis-3.5.14.jar:3.5.14]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80) ~[mybatis-3.5.14.jar:3.5.14]
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141) ~[mybatis-3.5.14.jar:3.5.14]
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86) ~[mybatis-3.5.14.jar:3.5.14]
-	at jdk.proxy16/jdk.proxy16.$Proxy220.insertPlan(Unknown Source) ~[na:na]
-	at com.ssafy.finalpjt.plan.service.PlanServiceImpl.insertPlan(PlanServiceImpl.java:21) ~[main/:na]
-	at com.ssafy.finalpjt.plan.controller.PlanController.insertPlan(PlanController.java:26) ~[main/:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy79.myLikedPostList(Unknown Source) ~[na:na]
+	at com.ssafy.finalpjt.post.service.PostServiceImpl.myLikedPostList(PostServiceImpl.java:60) ~[main/:na]
+	at com.ssafy.finalpjt.post.controller.PostController.myLikedPostList(PostController.java:52) ~[main/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
@@ -86,8 +47,8 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
@@ -124,43 +85,189 @@ java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child 
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
 
-2024-05-22T02:16:07.882+09:00  INFO 84429 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2024-05-22T02:16:07.897+09:00  INFO 84429 --- [FinalProject] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2024-05-22T02:16:07.901+09:00  INFO 84429 --- [FinalProject] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2024-05-22T02:16:07.962+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 84429 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
-2024-05-22T02:16:07.962+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
-2024-05-22T02:16:08.141+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-05-22T02:16:08.142+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-05-22T02:16:08.142+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-22T02:16:08.149+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-05-22T02:16:08.149+09:00  INFO 84429 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
-2024-05-22T02:16:08.399+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-05-22T02:16:08.408+09:00  INFO 84429 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-05-22T02:16:08.412+09:00  INFO 84429 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.464 seconds (process running for 10687.933)
-2024-05-22T02:16:08.413+09:00  INFO 84429 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-05-22T02:16:11.516+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-05-22T02:16:11.516+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-05-22T02:16:11.518+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-05-22T02:16:11.521+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2024-05-22T02:16:11.542+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@427ff4e2
-2024-05-22T02:16:11.542+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2024-05-22T02:16:36.833+09:00  INFO 84429 --- [FinalProject] [http-nio-8080-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target [/bookmarks?userSeq=1&title=[object+PointerEvent] ]. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
-	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
-
-2024-05-22T02:17:44.066+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.ssafy.finalpjt.bookmark.controller.BookmarkController.addBookmark(com.ssafy.finalpjt.bookmark.dto.BookmarkDto)]
-2024-05-22T02:20:08.413+09:00  WARN 84429 --- [FinalProject] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public int com.ssafy.finalpjt.bookmark.controller.BookmarkController.addBookmark(com.ssafy.finalpjt.bookmark.dto.BookmarkDto)]
-2024-05-22T02:21:53.304+09:00  INFO 84429 --- [FinalProject] [RMI TCP Connection(189)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2024-05-22T02:21:53.319+09:00  INFO 84429 --- [FinalProject] [RMI TCP Connection(189)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2024-05-22T02:21:53.324+09:00  INFO 84429 --- [FinalProject] [RMI TCP Connection(189)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-05-23T00:54:31.162+09:00  WARN 63634 --- [FinalProject] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m26s314ms).
+2024-05-23T01:17:32.495+09:00  WARN 63634 --- [FinalProject] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Could not read JSON: java.lang.NumberFormatException: For input string: "2024-05-30"]
+2024-05-23T01:17:33.861+09:00  WARN 63634 --- [FinalProject] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Could not read JSON: java.lang.NumberFormatException: For input string: "2024-05-30"]
+2024-05-23T01:23:14.093+09:00  WARN 63634 --- [FinalProject] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Could not read JSON: java.lang.NumberFormatException: For input string: "2024-05-30"]
+2024-05-23T02:14:45.856+09:00  WARN 63634 --- [FinalProject] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s336ms).
+2024-05-23T02:20:17.264+09:00  WARN 63634 --- [FinalProject] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m1s401ms).
+2024-05-23T02:22:41.242+09:00  WARN 63634 --- [FinalProject] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m23s978ms).
+2024-05-23T02:28:00.260+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:28:00.285+09:00  INFO 63634 --- [FinalProject] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T02:28:00.290+09:00  INFO 63634 --- [FinalProject] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T02:28:00.364+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:28:00.364+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:28:00.573+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:28:00.574+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:28:00.574+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:28:00.581+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:28:00.581+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 215 ms
+2024-05-23T02:28:00.862+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:28:00.871+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:28:00.876+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.529 seconds (process running for 15267.698)
+2024-05-23T02:28:00.877+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:29:00.310+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:29:00.372+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:29:00.372+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:29:00.523+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:29:00.527+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:29:00.528+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:29:00.535+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:29:00.535+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 162 ms
+2024-05-23T02:29:00.765+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:29:00.773+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:29:00.778+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.418 seconds (process running for 15327.602)
+2024-05-23T02:29:00.779+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:29:47.779+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23T02:29:47.780+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-23T02:29:47.782+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-23T02:29:47.785+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-23T02:29:47.805+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5363ca92
+2024-05-23T02:29:47.806+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-23T02:36:49.255+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:36:49.267+09:00  INFO 63634 --- [FinalProject] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-23T02:36:49.270+09:00  INFO 63634 --- [FinalProject] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-05-23T02:36:49.331+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:36:49.332+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:36:49.507+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:36:49.509+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:36:49.509+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:36:49.516+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:36:49.516+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2024-05-23T02:36:49.772+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:36:49.781+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:36:49.785+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.469 seconds (process running for 15796.625)
+2024-05-23T02:36:49.786+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:36:51.195+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:36:51.255+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:36:51.255+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:36:51.400+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:36:51.400+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:36:51.400+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:36:51.406+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:36:51.406+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 150 ms
+2024-05-23T02:36:51.624+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:36:51.633+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:36:51.637+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.394 seconds (process running for 15798.477)
+2024-05-23T02:36:51.638+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:38:37.909+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:38:37.959+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:38:37.959+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:38:38.117+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:38:38.118+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:38:38.118+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:38:38.124+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:38:38.124+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 164 ms
+2024-05-23T02:38:38.349+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:38:38.358+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:38:38.362+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.416 seconds (process running for 15905.186)
+2024-05-23T02:38:38.363+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:38:39.783+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:38:39.841+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:38:39.841+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:38:39.984+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:38:39.984+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:38:39.984+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:38:39.990+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:38:39.990+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2024-05-23T02:38:40.204+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:38:40.214+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:38:40.218+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.388 seconds (process running for 15907.041)
+2024-05-23T02:38:40.219+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:38:47.482+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23T02:38:47.482+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-23T02:38:47.484+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-23T02:38:47.490+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-23T02:38:47.511+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cfb8b8f
+2024-05-23T02:38:47.512+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-23T02:39:07.052+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:39:07.062+09:00  INFO 63634 --- [FinalProject] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-05-23T02:39:07.064+09:00  INFO 63634 --- [FinalProject] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-05-23T02:39:07.115+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:39:07.116+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:39:07.272+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:39:07.273+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:39:07.273+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:39:07.279+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:39:07.279+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 162 ms
+2024-05-23T02:39:07.500+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:39:07.508+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:39:07.513+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.408 seconds (process running for 15934.33)
+2024-05-23T02:39:07.513+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:39:10.801+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23T02:39:10.801+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-23T02:39:10.803+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-23T02:39:10.806+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-05-23T02:39:10.824+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66e70aad
+2024-05-23T02:39:10.825+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-05-23T02:41:10.952+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:41:10.961+09:00  INFO 63634 --- [FinalProject] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-05-23T02:41:10.964+09:00  INFO 63634 --- [FinalProject] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-05-23T02:41:11.021+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:41:11.021+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:41:11.178+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:41:11.178+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:41:11.178+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:41:11.184+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:41:11.185+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2024-05-23T02:41:11.410+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:41:11.418+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:41:11.423+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.412 seconds (process running for 16058.242)
+2024-05-23T02:41:11.423+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:41:20.965+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-05-23T02:41:21.024+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:41:21.024+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:41:21.175+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:41:21.176+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:41:21.176+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:41:21.182+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:41:21.182+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 157 ms
+2024-05-23T02:41:21.403+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:41:21.411+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:41:21.416+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.403 seconds (process running for 16068.236)
+2024-05-23T02:41:21.417+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:41:33.995+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-05-23T02:41:34.046+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:41:34.046+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:41:34.195+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:41:34.196+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:41:34.196+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:41:34.202+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:41:34.202+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 155 ms
+2024-05-23T02:41:34.430+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:41:34.438+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:41:34.442+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.407 seconds (process running for 16081.263)
+2024-05-23T02:41:34.443+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:41:51.103+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:41:51.162+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:41:51.162+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:41:51.304+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:41:51.305+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:41:51.305+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:41:51.311+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:41:51.311+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 148 ms
+2024-05-23T02:41:51.519+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:41:51.527+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:41:51.532+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.381 seconds (process running for 16098.353)
+2024-05-23T02:41:51.533+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:42:43.813+09:00  INFO 63634 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-05-23T02:42:43.872+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 19.0.2 with PID 63634 (/Users/pottery/git/FinalProjectBE/FinalProject/bin/main started by pottery in /Users/pottery/git/FinalProjectBE/FinalProject)
+2024-05-23T02:42:43.872+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T02:42:44.011+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T02:42:44.012+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T02:42:44.012+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T02:42:44.018+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T02:42:44.018+09:00  INFO 63634 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 145 ms
+2024-05-23T02:42:44.231+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T02:42:44.239+09:00  INFO 63634 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T02:42:44.243+09:00  INFO 63634 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.381 seconds (process running for 16151.065)
+2024-05-23T02:42:44.244+09:00  INFO 63634 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-05-23T02:42:49.756+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-23T02:42:49.756+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-23T02:42:49.757+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-23T02:42:49.759+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-05-23T02:42:49.779+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f35595e
+2024-05-23T02:42:49.780+09:00  INFO 63634 --- [FinalProject] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-05-23T02:44:14.783+09:00  INFO 63634 --- [FinalProject] [RMI TCP Connection(326)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-05-23T02:44:14.790+09:00  INFO 63634 --- [FinalProject] [RMI TCP Connection(326)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-05-23T02:44:14.794+09:00  INFO 63634 --- [FinalProject] [RMI TCP Connection(326)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.

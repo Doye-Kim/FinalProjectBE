@@ -12,9 +12,9 @@
 		VALUES (#{userSeq}, #{contentId}, NOW())
 	</insert>
 
-	<delete id="deleteBookmark" parameterType="int">
+	<delete id="deleteBookmark" parameterType="com.ssafy.finalpjt.bookmark.dto.BookmarkDto">
 		DELETE FROM bookmark
-		WHERE bookmark_seq = #{bookmarkSeq}
+		WHERE user_seq = #{userSeq} and content_id = #{contentId}
 	</delete>
 
 	<select id="getBookmarksByUser" parameterType="int"

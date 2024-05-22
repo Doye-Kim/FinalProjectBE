@@ -15,9 +15,9 @@
 
 	<select id="listPlan"
 		resultType="com.ssafy.finalpjt.plan.dto.PlanDto">
-		SELECT *
-		FROM plan
-		WHERE user_seq = #{userSeq}
+		SELECT * FROM plan
+			WHERE user_seq = #{userSeq}
+			 ORDER BY plan_date desc
 
 	</select>
 

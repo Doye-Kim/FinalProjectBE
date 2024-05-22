@@ -22,14 +22,18 @@ public class BookmarkServiceImpl implements BookmarkService{
         int contentId = bookmarkDto.getContentId();
 
         if (!bookmarkDao.isBookmarkedByUser(userSeq, contentId)) {
+        	System.out.println("등록 가능 ");
             return bookmarkDao.insertBookmark(bookmarkDto);
         }
-        return 0;
+        else {
+        	System.out.println("등록 불가능 " + bookmarkDto.getBookmarkSeq());
+        	return bookmarkDao.deleteBookmark(bookmarkDto);
+        }
     }
 
     @Override
-    public int removeBookmark(int bookmarkSeq) {
-        return bookmarkDao.deleteBookmark(bookmarkSeq);
+    public int removeBookmark(BookmarkDto bookmarkDto) {
+        return bookmarkDao.deleteBookmark(bookmarkDto);
     }
 
     @Override

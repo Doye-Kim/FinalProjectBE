@@ -23,7 +23,7 @@
 	</select>
 
 	<select id="getLikeCount" parameterType="int" resultType="int">
-        SELECT COUNT(*) FROM post_like_user
+        SELECT like_count FROM post
         WHERE post_seq = #{postSeq}
     </select>
 	

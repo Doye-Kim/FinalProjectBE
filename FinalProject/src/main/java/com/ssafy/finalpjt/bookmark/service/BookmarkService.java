@@ -7,7 +7,7 @@ import com.ssafy.finalpjt.bookmark.dto.BookmarkResultDto;
 
 public interface BookmarkService {
 	int addBookmark(BookmarkDto bookmarkDto);
-    int removeBookmark(int bookmarkSeq);
+    int removeBookmark(BookmarkDto bookmarkDto);
     List<BookmarkResultDto> getBookmarksByUser(int userSeq);
     
 

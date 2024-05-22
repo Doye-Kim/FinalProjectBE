@@ -23,14 +23,14 @@ public class BookmarkController {
 
 
     @PostMapping("/bookmarks")
-    public int addBookmark(@RequestBody BookmarkDto bookmarkDto) {
+    public int Bookmark(@RequestBody BookmarkDto bookmarkDto) {
     	System.out.println(bookmarkDto);
         return bookmarkService.addBookmark(bookmarkDto);
     }
 
     @DeleteMapping("/bookmarks/{bookmarkSeq}")
-    public int removeBookmark(@PathVariable("bookmarkSeq") int bookmarkSeq) {
-        return bookmarkService.removeBookmark(bookmarkSeq);
+    public int removeBookmark(@RequestBody BookmarkDto bookmarkDto) {
+        return bookmarkService.removeBookmark(bookmarkDto);
     }
 
     @GetMapping("/bookmarks/{userSeq}")

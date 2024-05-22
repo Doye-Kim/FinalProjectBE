@@ -15,7 +15,7 @@ public interface BookmarkDao {
 	int insertBookmark(BookmarkDto bookmarkDto);
 	
 	// 북마크 해제
-	int deleteBookmark(int bookmarkSeq);
+	int deleteBookmark(BookmarkDto bookmarkDto);
 	
 	// 북마크 한 리스트
 	List<BookmarkResultDto> getBookmarksByUser(int userSeq);
