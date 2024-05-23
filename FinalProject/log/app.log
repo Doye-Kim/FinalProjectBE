@@ -2279,3 +2279,17 @@ java.lang.NullPointerException: Cannot invoke "com.ssafy.finalpjt.post.dto.PostD
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
 	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
 
+2024-05-23T16:56:13.745+09:00  INFO 9908 --- [FinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 58 class path changes (0 additions, 1 deletion, 57 modifications)
+2024-05-23T16:56:13.752+09:00  INFO 9908 --- [FinalProject] [Thread-233] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2024-05-23T16:56:13.755+09:00  INFO 9908 --- [FinalProject] [Thread-233] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2024-05-23T16:56:13.810+09:00  INFO 9908 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Starting FinalProjectApplication using Java 17.0.9 with PID 9908 (C:\Users\SSAFY\git\FinalProjectBE\FinalProject\bin\main started by SSAFY in C:\Users\SSAFY\git\FinalProjectBE\FinalProject)
+2024-05-23T16:56:13.811+09:00  INFO 9908 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T16:56:14.021+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T16:56:14.021+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T16:56:14.021+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T16:56:14.030+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T16:56:14.030+09:00  INFO 9908 --- [FinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 218 ms
+2024-05-23T16:56:14.330+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-05-23T16:56:14.342+09:00  INFO 9908 --- [FinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T16:56:14.345+09:00  INFO 9908 --- [FinalProject] [restartedMain] c.s.finalpjt.FinalProjectApplication     : Started FinalProjectApplication in 0.548 seconds (process running for 28276.938)
+2024-05-23T16:56:14.346+09:00  INFO 9908 --- [FinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
