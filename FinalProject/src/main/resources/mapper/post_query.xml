@@ -6,11 +6,11 @@
 	<!-- BoardDao 5개 메소드와 동일한 sql 작성 -->
 
 	<!-- 게시글 목록 조회 -->
-	<select id="postList"
+	<select id="postList" parameterType="map"
 		resultType="com.ssafy.finalpjt.post.dto.PostDto">
 		SELECT * FROM post
-		ORDER BY
-		post_time DESC
+			ORDER BY post_time DESC
+			limit 10 offset #{offset}
 	</select>
 
 	<!-- 내가 쓴 글 목록 -->
@@ -110,4 +110,8 @@
 		view_count = view_count + 1
 		WHERE post_seq = #{postSeq}
 	</update>
+	
+	<select id="getTotalCount" >
+		select count(*) from post
+	</select>
 </mapper>

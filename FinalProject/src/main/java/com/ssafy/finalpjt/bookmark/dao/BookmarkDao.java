@@ -1,9 +1,9 @@
 package com.ssafy.finalpjt.bookmark.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import com.ssafy.finalpjt.bookmark.dto.BookmarkDto;
 import com.ssafy.finalpjt.bookmark.dto.BookmarkResultDto;
@@ -21,7 +21,7 @@ public interface BookmarkDao {
 	List<BookmarkResultDto> getBookmarksByUser(int userSeq);
 	
 	// 이미 북마크 했는지 확인
-	boolean isBookmarkedByUser(@Param("userSeq") int userSeq, @Param("contentId") int contentId);
+	int isBookmarkedByUser(Map<String, Integer> map);
 	
 
 }

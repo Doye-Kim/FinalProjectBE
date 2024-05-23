@@ -17,8 +17,8 @@ public class PostServiceImpl implements PostService{
 	private final PostDao postDao;
 	
 	@Override
-	public List<PostDto> postList() {
-		return postDao.postList();
+	public List<PostDto> postList(int offset) {
+		return postDao.postList(offset);
 	}
 
 	@Override
@@ -58,6 +58,11 @@ public class PostServiceImpl implements PostService{
 	@Override
 	public List<PostDto> myLikedPostList(int userSeq) {
 	    return postDao.myLikedPostList(userSeq);
+	}
+
+	@Override
+	public int getTotalCount() {
+		return postDao.getTotalCount();
 	}
 
 }

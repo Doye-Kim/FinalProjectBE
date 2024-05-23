@@ -27,7 +27,7 @@
 		WHERE b.user_seq = #{userSeq}
 	</select>
 
-	<select id="isBookmarkedByUser" resultType="boolean">
+	<select id="isBookmarkedByUser" parameterType="map" resultType="int">
 		SELECT COUNT(*) > 0
 		FROM bookmark
 		WHERE user_seq = #{userSeq} AND content_id = #{contentId}

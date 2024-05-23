@@ -6,7 +6,7 @@ import java.util.Map;
 import com.ssafy.finalpjt.post.dto.PostDto;
 
 public interface PostService {
-	List<PostDto> postList();
+	List<PostDto> postList(int offset);
 
 	PostDto postDetail(int postSeq);
 
@@ -15,6 +15,8 @@ public interface PostService {
 	int postUpdate(PostDto dto);
 
 	int postDelete(int postSeq);
+	
+	int getTotalCount();
 
 	// 내가 쓴 글 목록
 	List<PostDto> myPostList(int userSeq);

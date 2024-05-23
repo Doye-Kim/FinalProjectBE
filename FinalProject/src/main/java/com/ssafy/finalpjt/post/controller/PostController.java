@@ -28,11 +28,9 @@ public class PostController {
 	private final ViewService viewService;
 
 	// 목록
-	@GetMapping("/posts")
-	public List<PostDto> postList() {
-		List<PostDto> list = postService.postList();
-		System.out.println(list);
-		return list;
+	@GetMapping("/posts/{offset}/list")
+	public List<PostDto> postList(@PathVariable("offset") int offset) {
+		return postService.postList(offset);
 	}
 	// 내가 쓴 글 목록
 	@GetMapping("/posts/post-list")
@@ -91,10 +89,15 @@ public class PostController {
 	}
 
 	// 삭제
-	@DeleteMapping("posts/{postSeq}")
+	@DeleteMapping("/posts/{postSeq}")
 	public int psotDelete(@PathVariable("postSeq") int postSeq) {
 		System.out.println(postSeq);
 		return postService.postDelete(postSeq);
+	}
+	
+	@GetMapping("/posts/total-cnt")
+	public int getTotalCount() {
+		return postService.getTotalCount();
 	}
 
 }

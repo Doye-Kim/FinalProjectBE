@@ -1,6 +1,8 @@
 package com.ssafy.finalpjt.bookmark.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,6 +39,13 @@ public class BookmarkController {
     public List<BookmarkResultDto> getBookmarksByUser(@PathVariable("userSeq") int userSeq) {
         return bookmarkService.getBookmarksByUser(userSeq);
     }
-    
+    @GetMapping("/bookmarks/{userSeq}/{contentId}")
+    public boolean isBookmarkedByUser(@PathVariable("userSeq") int userSeq, @PathVariable("contentId") int contentId) {
+    	Map<String, Integer> map = new HashMap<>();
+    	map.put("userSeq", userSeq);
+    	map.put("contentId", contentId);
+    	if(bookmarkService.isBookmarkedByUser(map) == 1) return true;
+    	else return false;
+    }
 
 }

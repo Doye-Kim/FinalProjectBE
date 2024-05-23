@@ -17,7 +17,7 @@
 		WHERE user_seq = #{userSeq} AND post_seq = #{postSeq}
 	</delete>
 
-	<select id="isLiked" resultType="boolean">
+	<select id="isLiked" parameterType="map" resultType="int">
 		SELECT COUNT(*) > 0 FROM post_like_user
 		WHERE user_seq = #{userSeq} AND post_seq = #{postSeq}
 	</select>
